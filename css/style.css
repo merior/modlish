@@ -52,6 +52,8 @@ button {
   padding-top: 20px;
   padding-bottom: 20px;
   box-shadow: 0px 9px 14px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 998;
 }
 .header__container {
   display: flex;
@@ -93,20 +95,6 @@ button {
   border: 2px solid #7F3047;
   border-radius: 10px;
   background: url("../img/searchPlaceHolder.svg") no-repeat left 15px center;
-}
-.header__search::-moz-placeholder {
-  color: rgba(127, 48, 71, 0.75);
-  font-family: Roboto;
-  font-weight: light;
-  font-size: 20px;
-  line-height: 23px;
-}
-.header__search:-ms-input-placeholder {
-  color: rgba(127, 48, 71, 0.75);
-  font-family: Roboto;
-  font-weight: light;
-  font-size: 20px;
-  line-height: 23px;
 }
 .header__search::placeholder {
   color: rgba(127, 48, 71, 0.75);
@@ -342,7 +330,42 @@ button {
   align-items: center;
 }
 
+.cart {
+  padding-top: 100px;
+}
+.cart__headline {
+  text-align: left;
+}
+.cart__container {
+  max-width: 1208px;
+  width: 100%;
+}
+.cart__headline {
+  margin-bottom: 28px;
+}
+.cart__paragraph {
+  max-width: 672px;
+  width: 100%;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 46px;
+}
+.cart__buttons {
+  margin-top: 0;
+}
+.cart__footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .popup {
+  z-index: 999;
   width: 100%;
   height: 100%;
   position: fixed;
